@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StockSense - Enterprise Inventory Management System</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              500: '#7c3aed',
+              600: '#6d28d9',
+              700: '#5b21b6',
+              800: '#4c1d95',
+              900: '#2e1065',
+            },
+            odoo: {
+              purple: '#714B67',
+              teal: '#017E84',
+              gray: '#F8F9FA'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbars */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+  <div id="app" class="flex h-screen overflow-hidden">
+    <!-- Content injected via app.js -->
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
